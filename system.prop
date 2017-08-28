@@ -41,7 +41,7 @@ audio.offload.min.duration.secs=30
 persist.dirac.acs.controller=qem
 
 # Battery
-ro.cutoff_voltage_mv=3200
+ro.cutoff_voltage_mv=3250
 
 # Bluetooth
 bt.max.hfpclient.connections=1
@@ -83,12 +83,13 @@ drm.service.enabled=true
 # ro.frp.pst=/dev/block/bootdevice/by-name/config
 
 # Graphics
-ro.sf.lcd_density=480
+ro.sf.lcd_density=420
 debug.sf.hw=1
 debug.gralloc.enable_fb_ubwc=1
 dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
 sdm.debug.disable_partial_split=1
+sdm.perf_hint_window=50
 ro.opengles.version=196610
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
@@ -192,4 +193,21 @@ persist.dbg.wfc_avail_ovr=1
 # Wi-Fi
 wifi.interface=wlan0
 
+# Oxygen OS
+ro.min_freq_0=307200
+ro.min_freq_4=307200
+	
+ro.hwui.texture_cache_size=96	
+ro.hwui.layer_cache_size=64
+ro.hwui.r_buffer_cache_size=12
+ro.hwui.path_cache_size=39
+ro.hwui.gradient_cache_size=1
+ro.hwui.drop_shadow_cache_size=7
+ro.hwui.texture_cache_flushrate=0.4
+ro.hwui.text_small_cache_width=2048
+ro.hwui.text_small_cache_height=2048
+ro.hwui.text_large_cache_width=3072
+ro.hwui.text_large_cache_height=2048
 
+ro.core_ctl_min_cpu=2
+ro.core_ctl_max_cpu=4
